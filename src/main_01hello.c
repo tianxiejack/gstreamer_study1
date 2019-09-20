@@ -17,7 +17,10 @@ int main_01hello(int argc, char *argv[]) {
   gst_init (&argc, &argv);
 
   /* Build the pipeline */
-  pipeline = gst_parse_launch ("playbin uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
+  //pipeline = gst_parse_launch ("playbin uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
+	
+  //pipeline = gst_parse_launch ("playbin uri=file:///home/nvidia/Videos/MOV.mp4", NULL);
+  pipeline = gst_parse_launch ("playbin uri=file:///home/alex/videosrc/MOV.mp4", NULL);
 
   /* Start playing */
   gst_element_set_state (pipeline, GST_STATE_PLAYING);
