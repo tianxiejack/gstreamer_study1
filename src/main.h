@@ -8,10 +8,10 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
-#define M_MAIN main_02
+#define M_MAIN main_01
 
 
-int main_01hello(int argc, char **argv);
+int main_01(int argc, char **argv);
 int main_02(int argc, char *argv[]) ;
 
 
