@@ -8,9 +8,6 @@
 #include <gst/gst.h>
 
 int main_02(int argc, char *argv[]) {
-
-	int val;
-
   GstElement *pipeline, *source, *sink;
   GstBus *bus;
   GstMessage *msg;
@@ -41,8 +38,6 @@ int main_02(int argc, char *argv[]) {
 
   /* Modify the source's properties */
   g_object_set (source, "pattern", 0, NULL);
-
-
 
   /* Start playing */
   ret = gst_element_set_state (pipeline, GST_STATE_PLAYING);
